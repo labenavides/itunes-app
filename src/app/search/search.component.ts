@@ -17,13 +17,14 @@ export class SearchComponent implements OnInit {
   dataSource: Song[] = [];
 
   ngOnInit(): void {
-    this.itunesService.getSongs().subscribe(data => {
-      console.log("ngOnInit. FIN", data.canciones);
+
+  }
+
+  getArtistSongs(artistName: string){
+    this.itunesService.getSongs(artistName).subscribe(data => {
       this.songs = data.canciones;
       this.dataSource = data.canciones;
     });
-
-
   }
 
 }
