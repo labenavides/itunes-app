@@ -14,7 +14,7 @@ export class DisplayinfoComponent implements OnChanges {
   constructor() { }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log("asdasd",changes);
+
   }
 
 

@@ -14,7 +14,6 @@ export class AppComponent {
   constructor(private itunesService : ItunesService) { }
 
   findSongs(artistName: string){
-    console.log('artistname', artistName);
     this.itunesService.getSongs(artistName).subscribe(data => {
       this.songs = data.canciones;
     })
