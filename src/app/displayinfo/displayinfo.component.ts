@@ -10,7 +10,6 @@ export class DisplayinfoComponent implements OnChanges {
 
   @Input() songsList: Song[] = [];
   displayedColumns: string[] = ['nombre_tema', 'nombre_album', 'preview_url', 'precio._valor', 'fecha_lanzamiento'];
-  dataSource: Song[] = [];
   constructor() { }
 
   ngOnChanges(changes: SimpleChanges): void {
