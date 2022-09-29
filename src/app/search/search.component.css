@@ -1,3 +1,8 @@
-table {
-  width: 100%;
+
+.search-div{
+  margin: 1rem;
+  width: fit-content;
+}
+.name-label h4{
+  margin: 0px;
 }

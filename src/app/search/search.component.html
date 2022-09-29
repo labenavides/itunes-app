@@ -1,26 +1,16 @@
 
-<button type="button" (click)="getArtistSongs('radiohead')">Buscar</button>
-<div class="table table-striped">
-  <table>
-      <thead>
-          <tr>
-              <th>Nombre Tema</th>
-              <th>Nombre Album</th>
-              <th>Url preview</th>
-              <th>Valor</th>
-              <th>Fecha de lanzamiento</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr *ngFor="let song of songs">
-              <td>{{song.nombre_tema}}</td>
-              <td>{{song.nombre_album}}</td>
-              <td>{{song.preview_url}}</td>
-              <td>{{song.precio._valor}}</td>
-              <td>{{song.fecha_lanzamiento}}</td>
-          </tr>
-      </tbody>
-  </table>
+<div class="search-div">
+  <div class="name-label">
+    <h4>Nombre del Artista</h4>
+  </div>
+  <input type="text" (change)="changeName($event)" placeholder="Ex. pearl jam" style="margin-right: 10px;">
+  <button mat-raised-button color="primary" (click)="onClickSearch()">
+   Buscar
+  </button>
 </div>
+
+
+
+
 
 

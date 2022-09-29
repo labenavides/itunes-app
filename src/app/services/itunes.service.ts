@@ -15,7 +15,6 @@ export class ItunesService {
 
   public getSongs(artistName: string):  Observable<Response> {
     let queryParams = new HttpParams().append("name",artistName);
-    this.apiUrl.concat(artistName);
     return this.http.get<Response>(this.apiUrl,{params:queryParams});
 }
 }

@@ -1,2 +1,5 @@
-<p>Welcome</p>
-<router-outlet></router-outlet>
+<div class="main-page">
+  <app-search (artistName)="findSongs($event)"></app-search>
+  <app-displayinfo [songsList]="songs"></app-displayinfo>
+</div>
+
